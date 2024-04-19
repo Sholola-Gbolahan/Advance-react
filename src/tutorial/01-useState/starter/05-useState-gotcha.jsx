@@ -5,11 +5,15 @@ const UseStateGotcha = () => {
 
 
   const handleClick = () => {
-    setValue ((currentState) => {
-      const newSate = currentState +1;
-      return newSate;
-     
-    });
+     setTimeout( () => {
+      console.log("clicked")
+      setValue((currentState) => {
+        const newState = currentState + 1
+        return newState;
+      })
+
+     },3000)
+   
 
     // Gotcha here i sthat value is starting from zero 0 on console while it's starting from 1 on UI
     // console.log(value)
