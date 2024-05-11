@@ -12,10 +12,10 @@ const UseStateGotcha = () => {
         return newState;
       })
 
-     },3000)
+     },1000)
    
 
-    // Gotcha here i sthat value is starting from zero 0 on console while it's starting from 1 on UI
+    // Gotcha here is that value is starting from zero 0 on console while it's starting from 1 on UI
     // console.log(value)
   }
 
