@@ -16,4 +16,10 @@
 - Learnt when a useEffect have dependency of a state, after initial render it's only going rerender when the state gets updated
 
 #### 022 UseEffect Fetch Challenge - Intro
-- 
+
+
+## Conditional-rendering
+
+#### 01-multiple-returns-basics
+- Learnt that just as a function can have multiple returns in terms of conditional, same can be done in react as well
+- Learnt the function of the setTimeout here is to help display isLoading to user for data to be fully fetched and at timeout, the loading function is set to false which then dislay the main return
