@@ -1,4 +1,5 @@
-#### useEffect
+## useEffect
+#### 020 UseEffect - Fundamentals
 - useEffect hook
 - accepts two arguments (second optional)
 - first argument - cb function
@@ -9,3 +10,7 @@
 
 - Learnt useEffect is not okay with Async function because it returns promise
 - Learnt we can invoke async await as function inside of useEffect for data fetching but not at the cb
+
+#### 021 UseEffect - Multiple Effects
+- Learnt it's possible to have multiple useEffect hooks but it's not adviceable 
+- Learnt when a useEffect have dependency of a state, after initial render it's only going rerender when the state gets updated
