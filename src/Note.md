@@ -14,3 +14,6 @@
 #### 021 UseEffect - Multiple Effects
 - Learnt it's possible to have multiple useEffect hooks but it's not adviceable 
 - Learnt when a useEffect have dependency of a state, after initial render it's only going rerender when the state gets updated
+
+#### 022 UseEffect Fetch Challenge - Intro
+- 

@@ -22,7 +22,7 @@ const MultipleEffects = () => {
       <button className='btn' onClick={() => setSecondValue(secondValue + 1)}>
         second value
       </button>
-    </div>
+    </div> 
   );
 };
 export default MultipleEffects;
