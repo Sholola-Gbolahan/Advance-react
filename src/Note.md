@@ -23,3 +23,13 @@
 #### 01-multiple-returns-basics
 - Learnt that just as a function can have multiple returns in terms of conditional, same can be done in react as well
 - Learnt the function of the setTimeout here is to help display isLoading to user for data to be fully fetched and at timeout, the loading function is set to false which then dislay the main return
+
+#### 02-multiple-returns-fetch-data Challenge
+- Learnt there are three state to have for data fetching
+  - loading - waiting for data to arrive (display loading state)
+  - error - there was an error (display error message)
+  - success - received data (display data)
+- Learnt isLoading is to be render before the actual Jsx file because javascript reads codes from top to bottom.
+- Learnt the error condition is going to be display when isLoading is set to false
+- learnt isLoading is set to false right after the catch can only be initiated if data is loaded successfully. 
+- Learnt setIsError is set inside of the catch for the error message to be display in Jsx when the data is not fetched.
