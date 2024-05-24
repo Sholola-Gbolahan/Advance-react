@@ -63,3 +63,9 @@
     - Learnt the && operator (logical AND) returns the first operand if it is "falsy", or the second operand if the first operand is "truthy".
     - Learnt the || operator (logical OR) returns the first operand if it is "truthy", or the second operand if the first operand is "falsy".
   - Learnt the short-circuit evealution can be used in JSX while the normal if condition cannot be used in a jsx return 
+
+#### 034 Short Circuit - Examples
+  1. learnt the OR ||  operator is mostly used in API to display a defualt value when data is not available 
+  2. Learnt adding a not operator to a falsy value will make the value acts as a truthy. 
+  3. Learnt a component can also be retuerned with the short-circuit approach
+  4. Learnt the example in 3 simple mean  if the user exit in detabase then the relates information about the user will be display in the component  
