@@ -49,3 +49,17 @@
 #### 031 React Hooks Rules
   - Learnt a hook can't be placed inside of a if condition
   - Leaarnt not good to place useEffect after a if condition reason because the code will stop if the condition is meant and the useEffect will be render useless
+#### 033 Short Circuit - Overview
+  - Learnt example of falsy values are 
+    - false
+    - 0 (zero)
+    - "" (empty string)
+    - null
+    - undefined
+    - NaN (Not a Number)
+    - All other values, including objects and arrays, are considered truthy.
+  - Learnt about short circuit operator AND(&) and OR(||)
+  - Learnt short-circuit evaluation is a technique that allows you to use logical operators (such as && and ||) to perform conditional evaluations in a concise way.
+    - Learnt the && operator (logical AND) returns the first operand if it is "falsy", or the second operand if the first operand is "truthy".
+    - Learnt the || operator (logical OR) returns the first operand if it is "truthy", or the second operand if the first operand is "falsy".
+  - Learnt the short-circuit evealution can be used in JSX while the normal if condition cannot be used in a jsx return 

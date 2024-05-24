@@ -1,5 +1,5 @@
 
-import Starter from './tutorial/03-conditional-rendering/starter/03-hooks-rule'
+import Starter from './tutorial/03-conditional-rendering/starter/04-short-circuit-overview'
 
 
 
