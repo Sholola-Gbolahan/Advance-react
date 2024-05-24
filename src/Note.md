@@ -38,4 +38,10 @@
 - Learnt  fetch doesn't consider 404 as error
 - Learnt the error can be fixed by for the ok property in the data
 - Learnt the ok has it value true when data is present and false when data is not present 
-- Learnt this approach is not needed with tehe use of axios
+- Learnt this approach is not needed with the use of axios
+
+#### 030 Fetch Function Location
+- Learnt fetch function can be moved to a separate file and imported into useEffect component.
+- Learnt the Gotcha here is that the fetch function get created from the crash when the re-redner happens but won't be the case if its seating inside of the useEffect.
+- Learnt that to the dependency its means there's new update to the fetchData which causes an infinite loop
+- It's advicable to have the fetch function inside of the useEffect

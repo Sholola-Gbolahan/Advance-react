@@ -1,31 +1,32 @@
 import { useEffect, useState } from 'react';
-const url = 'https://api.github.com/users/QuincyLarsons';
+const url = 'https://api.github.com/users/QuincyLarson';
 
 const MultipleReturnsFetchData = () => {
   const [isLoading, setIsLaoding] = useState(true)
   const [isError, setIsError] = useState(false)
   const [user, setUser] = useState();
 
-  useEffect(()=>{
-    const fetchData = async () =>{
-      try{
-        const resp = await fetch(url)
-        if(!resp.ok){
-          setIsError(true),
-          setIsLaoding(false)
-        }
-        const user = await resp.json()
-        setUser(user)
-      
+  const fetchData = async () =>{
+    try{
+      const resp = await fetch(url)
+      if(!resp.ok){
+        setIsError(true),
+        setIsLaoding(false)
       }
-      catch(error){
-        setIsError(true)
-        console.log(error)
-      }
-
-      setIsLaoding(false)
-      
+      const user = await resp.json()
+      setUser(user)
+    
     }
+    catch(error){
+      setIsError(true)
+      console.log(error)
+    }
+
+    setIsLaoding(false)
+    
+  }
+
+  useEffect(()=>{
     fetchData()
   },[])
 
