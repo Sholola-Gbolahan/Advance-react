@@ -45,3 +45,7 @@
 - Learnt the Gotcha here is that the fetch function get created from the crash when the re-redner happens but won't be the case if its seating inside of the useEffect.
 - Learnt that to the dependency its means there's new update to the fetchData which causes an infinite loop
 - It's advicable to have the fetch function inside of the useEffect
+
+#### 031 React Hooks Rules
+  - Learnt a hook can't be placed inside of a if condition
+  - Leaarnt not good to place useEffect after a if condition reason because the code will stop if the condition is meant and the useEffect will be render useless
