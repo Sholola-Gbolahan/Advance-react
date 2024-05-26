@@ -78,3 +78,6 @@ condition ? expression1 : expression2;
   2. If condition is truthy, the operator will return expression1. If condition is falsy, it will return expression2.
   3. learnt the ternary operator can be used to return elemets as well.
    
+#### 036 Toggle Challenge
+  1. Learnt a return statement is placed after the first logic in order to avoid running the second conditon from running. It's said to be the way javascrpt works
+  2. Learnt the ! operator can also be use to change the state value to oppsite value. 
