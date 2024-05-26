@@ -5,7 +5,7 @@ const ShortCircuitExamples = () => {
   const [text, setText] = useState('');
   // truthy
   const [name, setName] = useState('susan');
-  const [user, setUser] = useState({ name: 'john' });
+  const [user, setUser] = useState({name:'Pleasant'});
   const [isEditing, setIsEditing] = useState(false);
 
   return ( <>
@@ -21,6 +21,11 @@ const ShortCircuitExamples = () => {
     } */}
     {/* N0: 3 */}
     { user && <SomeComponent name={user.name}/>}
+
+    <h2 style={{margin:'1rem 0'}}>Ternary Operator</h2>
+    <button className='btn'> {isEditing ? 'Edit' : 'Add'}</button>
+
+    {user ? ( <SomeComponent name={user.name} /> ) : (<h4>No user available</h4>) }
   </>
     
   )

@@ -68,4 +68,13 @@
   1. learnt the OR ||  operator is mostly used in API to display a defualt value when data is not available 
   2. Learnt adding a not operator to a falsy value will make the value acts as a truthy. 
   3. Learnt a component can also be retuerned with the short-circuit approach
-  4. Learnt the example in 3 simple mean  if the user exit in detabase then the relates information about the user will be display in the component  
+  4. Learnt the example in 3 simple mean  if the user exit in detabase then the relates information about the user will be display in the component 
+
+#### 035 Ternary Operator
+   1. Learnt the the ternary operator is a way to concisely express a simple conditional statement. It is often called the "conditional operator" or the "ternary conditional operator 
+```js
+condition ? expression1 : expression2;
+```
+  2. If condition is truthy, the operator will return expression1. If condition is falsy, it will return expression2.
+  3. learnt the ternary operator can be used to return elemets as well.
+   
