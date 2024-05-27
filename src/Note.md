@@ -87,4 +87,11 @@ condition ? expression1 : expression2;
 
 #### 038 UseEffect Cleanup Function 
 
-   1. Learnt the useEffect keep redendering becasue the component is mounting and unmouting when the toggle button is clicked which is what initiated useEffect first rendering .
+   1. Learnt the useEffect keep redendering becasue the component is mounting and unmouting when the toggle button is clicked which is what initiated useEffect first rendering.
+
+#### 039 UseEffect - Timer Example
+1. Learnt the setInterval will keep runing after after initial rendering as been unmouted, which can lead to serious issue e.g if use in a subscription and the subscription get cancled and the interval keeps runing.
+2. Learnt the soln to this is to use clean up function 
+3. learnt when it comes to setInterval, it usually return an ID.
+4. Learnt clearInterval is the syntax use to stop an interval and it run after the main component render and before the useEffect. It basically run when thw component unmout 
+   
