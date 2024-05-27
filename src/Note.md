@@ -84,3 +84,7 @@ condition ? expression1 : expression2;
 
 #### 037 User Challenge
   1. Learnt on login the user data from database will be available.
+
+#### 038 UseEffect Cleanup Function 
+
+   1. Learnt the useEffect keep redendering becasue the component is mounting and unmouting when the toggle button is clicked which is what initiated useEffect first rendering .
