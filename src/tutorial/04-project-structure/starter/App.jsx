@@ -5,7 +5,9 @@ import Example from './Example'
 const App = () => {
   return (
     <div> 
-      <Example/>
+      
+      <Example />
+
     </div> 
   )
 }
