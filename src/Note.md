@@ -98,3 +98,9 @@ condition ? expression1 : expression2;
 #### 040 UseEffect - Event Listeners Example
 1. Learnt affter main component rerenders, its not expected for the addEventListeners to be involked yet and in this case it does which is a gotcha
 2. Learnt the way to fix or clean up the issue is to return a function with the removeEventListener syntax to clear the event
+
+
+## Project Structure
+#### Export Group
+- Learnt it's needed when a component make use of more other component i'e when some component are repeatedly use in project.
+- 
