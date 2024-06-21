@@ -5,10 +5,18 @@ const OtherInputs = () => {
   // Checkbox can either be true / false, so default value is set to False
   const [shipping, setShipping] = useState(false)
 
+  const [framework, setFramework] = useState("react")
+
   const handleShipping = (e) => {
     console.log(e.target.checked)
 
     setShipping(e.target.checked)
+  }
+
+  const handleFramework = (e) => {
+    console.log(e.target.value)
+
+    setFramework(e.target.value)
   }
   return (
     <div>
@@ -29,6 +37,11 @@ const OtherInputs = () => {
           <label htmlFor="framework" className="form-label">
             Framework
           </label>
+          <select name="framework" value={framework} onChange={handleFramework}>
+            {frameworks.map((framework) => {
+              return <option key={framework}>{framework}</option>
+            })}
+          </select>
         </div>
         <button type="submit" className="btn btn-block">
           submit
