@@ -1,18 +1,11 @@
-
-import Starter from './tutorial/04-project-structure/starter/App'
-
-
-
+import Starter from "./tutorial/06-forms/starter/05-form-data"
 
 function App() {
   return (
-
-    <div className='container'>
-      <h2>Advanced React</h2>
-      <Starter   />
-    
+    <div className="container">
+      <Starter />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

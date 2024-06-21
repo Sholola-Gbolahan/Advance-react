@@ -103,4 +103,5 @@ condition ? expression1 : expression2;
 ## Project Structure
 #### Export Group
 - Learnt it's needed when a component make use of more other component i'e when some component are repeatedly use in project.
-- 
+
+## Leverage JavaScript 

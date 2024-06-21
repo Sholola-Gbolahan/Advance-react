@@ -23,7 +23,7 @@ const ControlledInputs = () => {
         </label>
         <input
           type='text'
-          className='form-input'
+          className='form-inputx'
           value={name}
           onChange={(e) => setName(e.target.value)}
           id='name'
