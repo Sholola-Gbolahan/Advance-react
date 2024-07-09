@@ -3,13 +3,21 @@ import { useEffect, useRef, useState } from "react"
 const UseRefBasics = () => {
   const [value, setValue] = useState(0)
   const refContainer = useRef(null)
-  //-> This will show the value of refcontainer before initial rendering which is Null
-  // console.log(refContainer)
+  const isMounted = useRef(false)
 
-  // This will show the value of refcontainer after initial rendering
+  // Use-Case of not running a perticular functionality after initial render but want to run the func when the value change
   useEffect(() => {
-    console.log(refContainer)
-  }, [])
+    // this is to put a focus on the input after initial render
+    refContainer.current.focus()
+  })
+  useEffect(() => {
+    if (!isMounted.current) {
+      isMounted.current = true
+      console.log(isMounted.current)
+      return
+    }
+    console.log("re-render")
+  }, [value])
 
   const handleSubmit = (e) => {
     e.preventDefault()
