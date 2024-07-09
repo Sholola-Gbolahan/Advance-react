@@ -9,8 +9,8 @@ const UncontrolledInputs = () => {
     // console.log(e.currentTarget)
 
     // Learnt currentTarget points to a form While target points to entries Value
-
     const formData = new FormData(e.currentTarget)
+
     // -> getting all form fields by spreading data out
     // const name = [...formData.entries()]
     // console.log(name)
