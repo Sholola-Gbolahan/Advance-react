@@ -1,18 +1,22 @@
-import React, { useState } from "react"
+import React, { createContext, useState } from "react"
 import NavLinks from "./NavLinks"
+
+export const NavbarContext = createContext()
 
 const Navbar = () => {
   const [user, setUser] = useState({ name: "bob" })
 
-  const Logout = () => {
+  const logout = () => {
     setUser(null)
   }
 
   return (
-    <div className="navbar">
-      <h5>CONTEXT API</h5>
-      <NavLinks user={user} logout={Logout} />
-    </div>
+    <NavbarContext.Provider value={{ user, logout }}>
+      <div className="navbar">
+        <h5>CONTEXT API</h5>
+        <NavLinks />
+      </div>
+    </NavbarContext.Provider>
   )
 }
 

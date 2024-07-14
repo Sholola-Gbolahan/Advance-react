@@ -1,11 +1,13 @@
-import React from "react"
+import React, { useContext } from "react"
+import { NavbarContext } from "./Navbar"
 
-const UserContainers = ({ user, logout }) => {
+const UserContainers = () => {
+  const { user, logout } = useContext(NavbarContext)
   return (
     <div className="user-container">
       {user ? (
         <>
-          <p>Hello there. {user.name} </p>
+          <p>Hello there. {user.name.toUpperCase()} </p>
           <button className="btn" onClick={logout}>
             Logout
           </button>
