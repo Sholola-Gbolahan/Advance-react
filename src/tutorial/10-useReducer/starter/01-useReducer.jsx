@@ -16,21 +16,28 @@ const reducer = (state, action) => {
   }
 
   if (action.type === RESET_LIST) {
-    return { ...state, people: [data] }
+    return { ...state, people: data }
   }
-  //  This is to throw an error when an there's an unknown action called
-  throw new Error(`No Matching " ${action.type} " - action-type `)
+
+  if (action.type === REMOVE_ITEM) {
+    const newPeople = state.people.filter((person) => {
+      return person.id !== action.payload.id
+    })
+
+    return { ...state, people: newPeople }
+  }
+
+  throw new Error(`Error with "${action.type}" action type`)
 
   //  This is to return State when no action is found
-  return state
+  // return state
 }
 
 const ReducerBasics = () => {
   const [state, dispatch] = useReducer(reducer, defaultState)
 
   const removeItem = (id) => {
-    // let newPeople = people.filter((person) => person.id !== id)
-    // setPeople(newPeople)
+    dispatch({ type: REMOVE_ITEM, payload: { id } })
   }
 
   console.log(state)
@@ -54,7 +61,7 @@ const ReducerBasics = () => {
           clear items
         </button>
       ) : (
-        <button onClick={() => dispatch({ type: "somthimg" })} className="btn">
+        <button onClick={() => dispatch({ type: RESET_LIST })} className="btn">
           reset
         </button>
       )}
