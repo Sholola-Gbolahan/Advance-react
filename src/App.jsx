@@ -1,10 +1,8 @@
-import FetchData from "./tutorial/02-useEffect/starter/04-fetch-data"
-import Starter from "./tutorial/08-custom-hooks/starter/01-toggle"
+import Starter from "./tutorial/10-useReducer/starter/01-useReducer"
 
 function App() {
   return (
     <div className="container">
-      <FetchData />
       <Starter />
     </div>
   )
